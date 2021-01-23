@@ -122,6 +122,7 @@ hr {
 	position: relative;
 	padding-top: 20px;
 	display: inline-block;
+	text-align: center;
 	transition: all 200ms ease-out;
 	&:hover {
 		transform: scale(1.04);
@@ -137,7 +138,6 @@ hr {
 	top: -35px;
 	background: $dark-orange;
 	border-radius: 50%;
-	text-align: center;
 	font-size: 20px;
 	display: table;
 	color: $dark-background-secondary;
@@ -153,19 +153,16 @@ hr {
 .item-title {
 	font-size: 1.4rem;
 	font-weight: 800;
-	text-align: center;
 }
 
 .item-preis {
 	font-size: 2rem;
 	font-weight: 800;
-	text-align: center;
 }
 
 .item-preis-uvp {
 	font-size: 1.4rem;
 	font-weight: 800;
-	text-align: center;
 	color: $dark-text-secondary;
 }
 
@@ -173,12 +170,31 @@ hr {
 	opacity: 0.3;
 }
 
-.btn-customize {
+.btn-next-step {
 	position: fixed;
 	right: 2rem;
 	bottom: 2rem;
 	width: 16rem;
 	height: 5rem;
+	background: $dark-orange;
+	border: none;
+	border-radius: 1rem;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.btn-add-item {
+	width: 100%;
+	background: $dark-background-primary;
+	color: $dark-text-primary;
+	border: none;
+	border-radius: 1rem;
+	font-size: 2rem;
+	font-weight: 800;
+}
+
+.btn-remove-item {
+	width: 100%;
 	background: $dark-orange;
 	border: none;
 	border-radius: 1rem;
