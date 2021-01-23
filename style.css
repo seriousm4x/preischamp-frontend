@@ -7609,12 +7609,6 @@ body {
   color: #e4e4e4;
   background: #1a1a1a; }
 
-a {
-  color: #ffab51; }
-
-a:hover {
-  color: #1a1a1a; }
-
 hr {
   background: #e4e4e4;
   height: 1px; }
@@ -7627,32 +7621,53 @@ hr {
   z-index: 1;
   top: 0;
   left: 0;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  padding: 0px; }
 
+.tabs a,
+.tabs ul {
+  border: none; }
+
+.navbar-items {
+  width: 100%; }
+
+.brand-icon {
+  width: 100%;
+  height: auto;
+  padding: 5%; }
+
+.is-active {
+  border-right: 3px solid #ffab51 !important; }
+  .is-active > svg {
+    color: #ffab51; }
+
+.fa-hotjar,
 .fa-microchip,
 .fa-store,
-.fa-chart-area {
+.fa-chart-area,
+.fa-lightbulb {
   color: #e4e4e4; }
-
-.page-hot:active,
-.page-hardware:active,
-.page-stores:active,
-.page-stonks:active {
-  color: #ffab51; }
+  .fa-hotjar:hover,
+  .fa-microchip:hover,
+  .fa-store:hover,
+  .fa-chart-area:hover,
+  .fa-lightbulb:hover {
+    color: #abaaaa; }
 
 .dark-light-toggle {
-  position: fixed;
+  position: absolute;
+  width: 100%;
   bottom: 0px; }
 
 .main-content {
   margin-left: 120px; }
 
-.hero-body > .title {
+.hero-body .title {
   font-size: 5rem;
   font-weight: 800;
   color: #e4e4e4; }
 
-.hero-body > .subtitle {
+.hero-body .subtitle {
   font-size: 2rem;
   font-weight: 700;
   color: #abaaaa; }
