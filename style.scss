@@ -120,17 +120,78 @@ hr {
 }
 
 .item {
+	width: 100%;
+	height: 100%;
+	min-height: 25vh;
+	display: flex;
+	flex-direction: column;
 	background: $dark-background-secondary;
 	border-radius: 2rem;
 	position: relative;
-	padding-top: 20px;
-	display: inline-block;
 	text-align: center;
 	transition: all 200ms ease-out;
+	align-items: center;
+	justify-content: center;
 	&:hover {
 		transform: scale(1.04);
 		transition: all 200ms ease-in;
 	}
+}
+
+.item-image {
+	img {
+		width: 100%;
+	}
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 90%;
+}
+
+.item-title {
+	font-size: 1.4rem;
+	font-weight: $font-weight-primary;
+}
+
+.item-preis {
+	font-size: 2rem;
+	font-weight: $font-weight-primary;
+}
+
+.item-preis-uvp {
+	font-size: 1.4rem;
+	font-weight: $font-weight-primary;
+	color: $dark-text-secondary;
+}
+
+.item-button {
+	a {
+		&:hover {
+			color: $dark-text-secondary;
+		}
+	}
+	height: 10%;
+	width: 100%;
+}
+
+.btn-add-item {
+	width: 100%;
+	background: $dark-background-primary;
+	color: $dark-text-primary;
+	border: none;
+	border-radius: 1rem;
+	font-weight: $font-weight-primary;
+	margin-top: auto;
+}
+
+.btn-remove-item {
+	width: 100%;
+	background: $dark-orange;
+	color: $dark-background-secondary;
+	border: none;
+	border-radius: 1rem;
+	font-weight: $font-weight-primary;
+	margin-top: auto;
 }
 
 .badge {
@@ -153,22 +214,6 @@ hr {
 	}
 }
 
-.item-title {
-	font-size: 1.4rem;
-	font-weight: $font-weight-primary;
-}
-
-.item-preis {
-	font-size: 2rem;
-	font-weight: $font-weight-primary;
-}
-
-.item-preis-uvp {
-	font-size: 1.4rem;
-	font-weight: $font-weight-primary;
-	color: $dark-text-secondary;
-}
-
 .item-not-available {
 	opacity: 0.3;
 }
@@ -183,22 +228,5 @@ hr {
 	border: none;
 	border-radius: 1rem;
 	font-size: 2rem;
-	font-weight: $font-weight-primary;
-}
-
-.btn-add-item {
-	width: 100%;
-	background: $dark-background-primary;
-	color: $dark-text-primary;
-	border: none;
-	border-radius: 1rem;
-	font-weight: $font-weight-primary;
-}
-
-.btn-remove-item {
-	width: 100%;
-	background: $dark-orange;
-	border: none;
-	border-radius: 1rem;
 	font-weight: $font-weight-primary;
 }

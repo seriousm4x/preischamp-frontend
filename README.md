@@ -8,8 +8,6 @@ Clone repo with: `git clone --recurse https://github.com/seriousm4x/preischamp-f
 
 Compile scss to css: `sass --watch --sourcemap=none style.scss:style.css`
 
-Mobile view is Pepega
-
 ## Aim of the project
 
 Prototype: [https://imgur.com/gallery/12vCl95](https://imgur.com/gallery/12vCl95)
