@@ -13,6 +13,8 @@ $dark-text-primary: #e4e4e4;
 $dark-text-secondary: #abaaaa;
 $dark-orange: #ffab51;
 $sidebar-width: 120px;
+$font-weight-primary: 800;
+$font-weight-secondary: 700;
 
 /* styles */
 html {
@@ -90,7 +92,7 @@ hr {
 .hero-body {
 	.title {
 		font-size: 5rem;
-		font-weight: 800;
+		font-weight: $font-weight-primary;
 		color: $dark-text-primary;
 	}
 }
@@ -98,7 +100,7 @@ hr {
 .hero-body {
 	.subtitle {
 		font-size: 2rem;
-		font-weight: 700;
+		font-weight: $font-weight-secondary;
 		color: $dark-text-secondary;
 	}
 }
@@ -109,6 +111,7 @@ hr {
 	border: none;
 	&::placeholder {
 		color: $dark-text-secondary;
+		font-weight: $font-weight-primary;
 	}
 }
 
@@ -143,7 +146,7 @@ hr {
 	color: $dark-background-secondary;
 	span {
 		font-size: 1.3em;
-		font-weight: 800;
+		font-weight: $font-weight-primary;
 		display: table-cell;
 		vertical-align: middle;
 		line-height: 2rem;
@@ -152,17 +155,17 @@ hr {
 
 .item-title {
 	font-size: 1.4rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 }
 
 .item-preis {
 	font-size: 2rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 }
 
 .item-preis-uvp {
 	font-size: 1.4rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 	color: $dark-text-secondary;
 }
 
@@ -180,7 +183,7 @@ hr {
 	border: none;
 	border-radius: 1rem;
 	font-size: 2rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 }
 
 .btn-add-item {
@@ -189,7 +192,7 @@ hr {
 	color: $dark-text-primary;
 	border: none;
 	border-radius: 1rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 }
 
 .btn-remove-item {
@@ -197,5 +200,5 @@ hr {
 	background: $dark-orange;
 	border: none;
 	border-radius: 1rem;
-	font-weight: 800;
+	font-weight: $font-weight-primary;
 }
