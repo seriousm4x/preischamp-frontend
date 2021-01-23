@@ -12,7 +12,6 @@ $dark-background-secondary: #313131;
 $dark-text-primary: #e4e4e4;
 $dark-text-secondary: #abaaaa;
 $dark-orange: #ffab51;
-$dark-drop-shadow: 0px 0px 20px 0px rgba(black, 0.3);
 $sidebar-width: 120px;
 
 /* styles */
@@ -107,7 +106,6 @@ hr {
 .input {
 	background-color: $dark-background-secondary;
 	color: $dark-text-secondary;
-	box-shadow: $dark-drop-shadow;
 	border: none;
 	&::placeholder {
 		color: $dark-text-secondary;
@@ -120,7 +118,6 @@ hr {
 
 .item {
 	background: $dark-background-secondary;
-	box-shadow: $dark-drop-shadow;
 	border-radius: 2rem;
 	position: relative;
 	padding-top: 20px;
@@ -181,11 +178,10 @@ hr {
 	right: 2rem;
 	bottom: 2rem;
 	width: 16rem;
-	height: 4rem;
+	height: 5rem;
 	background: $dark-orange;
 	border: none;
-	border-radius: 2rem;
-	font-size: 1.7rem;
+	border-radius: 1rem;
+	font-size: 2rem;
 	font-weight: 800;
-	box-shadow: $dark-drop-shadow;
 }

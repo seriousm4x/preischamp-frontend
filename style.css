@@ -7678,7 +7678,6 @@ hr {
 .input {
   background-color: #313131;
   color: #abaaaa;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   border: none; }
   .input::placeholder {
     color: #abaaaa; }
@@ -7688,7 +7687,6 @@ hr {
 
 .item {
   background: #313131;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
   position: relative;
   padding-top: 20px;
@@ -7741,10 +7739,9 @@ hr {
   right: 2rem;
   bottom: 2rem;
   width: 16rem;
-  height: 4rem;
+  height: 5rem;
   background: #ffab51;
   border: none;
-  border-radius: 2rem;
-  font-size: 1.7rem;
-  font-weight: 800;
-  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); }
+  border-radius: 1rem;
+  font-size: 2rem;
+  font-weight: 800; }
