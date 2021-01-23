@@ -116,10 +116,10 @@ hr {
 	top: -35px;
 	background: $dark-orange;
 	border-radius: 50%;
-	color: white;
 	text-align: center;
 	font-size: 20px;
 	display: table;
+	color: $dark-background-secondary;
 	span {
 		font-size: 1.3em;
 		font-weight: 800;
