@@ -42,7 +42,7 @@ hr {
 .tabs {
 	a,
 	ul {
-		border: none;
+		border-bottom: none;
 	}
 }
 
@@ -60,7 +60,7 @@ hr {
 	> svg {
 		color: $dark-orange;
 	}
-	border-right: 3px solid $dark-orange !important;
+	border-right: 3px solid $dark-orange;
 }
 
 .fa-hotjar,
@@ -103,6 +103,30 @@ hr {
 .item {
 	background: $dark-background-secondary;
 	border-radius: 2rem;
+	position: relative;
+	padding-top: 20px;
+	display: inline-block;
+}
+
+.badge {
+	width: 6rem;
+	height: 6rem;
+	position: absolute;
+	right: -20px;
+	top: -35px;
+	background: $dark-orange;
+	border-radius: 50%;
+	color: white;
+	text-align: center;
+	font-size: 20px;
+	display: table;
+	span {
+		font-size: 1.3em;
+		font-weight: 800;
+		display: table-cell;
+		vertical-align: middle;
+		line-height: 2rem;
+	}
 }
 
 .item-title {
