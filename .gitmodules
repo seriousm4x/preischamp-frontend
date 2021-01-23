@@ -1,0 +1,6 @@
+[submodule "bulma"]
+	path = bulma
+	url = https://github.com/jgthms/bulma.git
+[submodule "fontawesome"]
+	path = fontawesome
+	url = https://github.com/FortAwesome/Font-Awesome.git
