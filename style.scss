@@ -6,20 +6,24 @@ $column-gap: 1rem;
 
 @import "bulma/bulma.sass";
 
-/* colors */
+/* varaibles */
 $dark-background-primary: #1a1a1a;
 $dark-background-secondary: #313131;
 $dark-text-primary: #e4e4e4;
 $dark-text-secondary: #abaaaa;
 $dark-orange: #ffab51;
-
+$dark-drop-shadow: 0px 0px 20px 0px rgba(black, 0.3);
 $sidebar-width: 120px;
+
+/* styles */
+html {
+	background: $dark-background-primary;
+}
 
 body {
 	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
 		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 	color: $dark-text-primary;
-	background: $dark-background-primary;
 }
 
 hr {
@@ -29,7 +33,7 @@ hr {
 
 .vertical-nav {
 	width: $sidebar-width;
-	min-height: 100vh;
+	min-height: 100%;
 	background-color: $dark-background-secondary;
 	position: fixed;
 	z-index: 1;
@@ -100,12 +104,32 @@ hr {
 	}
 }
 
+.input {
+	background-color: $dark-background-secondary;
+	color: $dark-text-secondary;
+	box-shadow: $dark-drop-shadow;
+	border: none;
+	&::placeholder {
+		color: $dark-text-secondary;
+	}
+}
+
+.title-search {
+	align-items: flex-end;
+}
+
 .item {
 	background: $dark-background-secondary;
+	box-shadow: $dark-drop-shadow;
 	border-radius: 2rem;
 	position: relative;
 	padding-top: 20px;
 	display: inline-block;
+	transition: all 200ms ease-out;
+	&:hover {
+		transform: scale(1.04);
+		transition: all 200ms ease-in;
+	}
 }
 
 .badge {
@@ -146,4 +170,22 @@ hr {
 	font-weight: 800;
 	text-align: center;
 	color: $dark-text-secondary;
+}
+
+.item-not-available {
+	opacity: 0.3;
+}
+
+.btn-customize {
+	position: fixed;
+	right: 2rem;
+	bottom: 2rem;
+	width: 16rem;
+	height: 4rem;
+	background: $dark-orange;
+	border: none;
+	border-radius: 2rem;
+	font-size: 1.7rem;
+	font-weight: 800;
+	box-shadow: $dark-drop-shadow;
 }

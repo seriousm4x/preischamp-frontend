@@ -7603,11 +7603,14 @@ a.has-text-danger-dark:hover, a.has-text-danger-dark:focus {
   background-color: #fafafa;
   padding: 3rem 1.5rem 6rem; }
 
-/* colors */
+/* varaibles */
+/* styles */
+html {
+  background: #1a1a1a; }
+
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
-  color: #e4e4e4;
-  background: #1a1a1a; }
+  color: #e4e4e4; }
 
 hr {
   background: #e4e4e4;
@@ -7615,7 +7618,7 @@ hr {
 
 .vertical-nav {
   width: 120px;
-  min-height: 100vh;
+  min-height: 100%;
   background-color: #313131;
   position: fixed;
   z-index: 1;
@@ -7672,12 +7675,28 @@ hr {
   font-weight: 700;
   color: #abaaaa; }
 
+.input {
+  background-color: #313131;
+  color: #abaaaa;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+  border: none; }
+  .input::placeholder {
+    color: #abaaaa; }
+
+.title-search {
+  align-items: flex-end; }
+
 .item {
   background: #313131;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
   border-radius: 2rem;
   position: relative;
   padding-top: 20px;
-  display: inline-block; }
+  display: inline-block;
+  transition: all 200ms ease-out; }
+  .item:hover {
+    transform: scale(1.04);
+    transition: all 200ms ease-in; }
 
 .badge {
   width: 6rem;
@@ -7713,3 +7732,19 @@ hr {
   font-weight: 800;
   text-align: center;
   color: #abaaaa; }
+
+.item-not-available {
+  opacity: 0.3; }
+
+.btn-customize {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  width: 16rem;
+  height: 4rem;
+  background: #ffab51;
+  border: none;
+  border-radius: 2rem;
+  font-size: 1.7rem;
+  font-weight: 800;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3); }
